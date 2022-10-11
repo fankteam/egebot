@@ -72,7 +72,7 @@ async def main(client, message):
 				# else:
 				# 	await app.send_message(CHATS_POSTING[idc], 'text NONE '+'. Media: '+media_type+' , file_id = '+message[media_type]['file_id'])
 	except Exception as e:
-		print(e)
+# 		print(e)
 		await app.send_message('thefankor', "EXCEPTION " + str(e))
 
 
@@ -84,7 +84,7 @@ async def mainedition(client, message):
 			idc = CHATS_IDS.index(ch_id)
 			await app.send_message('thefankor', "Message edited in " + str(idc))
 	except Exception as e:
-		print(e)
+# 		print(e)
 		await app.send_message('thefankor', "EXCEPTION " + str(e))
 
 
